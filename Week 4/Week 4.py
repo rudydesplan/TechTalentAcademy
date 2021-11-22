@@ -45,8 +45,3 @@ else :
 
 #2.Create a data visualisation diagram to show destination and highest scores?
 from sklearn.datasets import load_iris
-iris = load_iris()
-X = iris.data
-Y = iris.target
-
-# diagram = score_above_height.plot.bar(x='Destinations', y='Feedback_score', rot=0)
