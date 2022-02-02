@@ -27,9 +27,45 @@ qplot(x, y, xlab = "x", ylab = "x^2", main = "f(x) = x^2")
 barplot(age, xlab = "name", ylab = "age", names.arg = name)
 
 #5.
+namme <- readline(“Enter your name:")
+agge <- readline(“Enter your age:")
+#print(paste("My name is :", namme, "and I am", agge, "years old"))
+
 #6.
 sequence <- 20:50
 avg <- mean(c(sequence))
 #print(avg)
 sum <- sum(c(sequence))
 #print(sum)
+
+#7.
+floor(runif(10, min=-50, max=50))
+
+#Optional Challenge 1
+Fibonacci <- numeric(10)
+Fibonacci[1] = 0
+Fibonacci[2] = 1
+Fibonacci[3] = 1
+for (i in 4:10) {
+    Fibonacci[i] = Fibonacci[i-1]+Fibonacci[i-2]
+    i= i+1
+}
+#print("First 10 Fibonacci numbers:")
+#print(Fibonacci)
+
+#Optional Challenge 2
+Liste <- list()
+for (i in 1:100) {
+  Liste[i] = i
+  if(i %% 3 == 0){
+    Liste[i] = "Fizz"
+  }
+  if(i %% 5 == 0){
+    Liste[i] = "Buzz"
+  }
+  if((i %% 3 == 0)&(i %% 5 == 0)){
+    Liste[i] = "FizzBuzz"
+  }
+  i= i+1
+}
+#print(Liste)
